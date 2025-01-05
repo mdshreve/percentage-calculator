@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Add event listeners for buttons and enter key
+  // Set up each calculation with enter key and copyable answers
   setupCalculation("percent-of-percent", "percent-of-total", "percent-of-answer", calculatePercentOf);
   setupCalculation("is-what-percent-value", "is-what-percent-total", "is-what-percent-answer", calculateWhatPercent);
   setupCalculation("percent-change-from", "percent-change-to", "percent-change-answer", calculatePercentChange);
