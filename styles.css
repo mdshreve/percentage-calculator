@@ -25,21 +25,14 @@ header h1 {
   margin: 0;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
 .container {
   width: 90%;
   margin: auto;
   overflow: hidden;
+}
+
+section {
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -47,12 +40,9 @@ h2 {
   margin-top: 20px;
 }
 
-.calc-block {
-  margin-bottom: 20px;
-  padding: 15px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+label {
+  display: block;
+  margin: 10px 0;
 }
 
 input {
@@ -88,32 +78,4 @@ footer {
   background: #333;
   color: white;
   text-align: center;
-  padding: 10px 0;
-}
-
-/* Tooltip styling */
-.answer {
-  position: relative;
-  cursor: pointer;
-  color: #007bff;
-  text-decoration: underline;
-}
-
-.answer:hover::after {
-  content: "Click to copy";
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 12px;
-  white-space: nowrap;
-  opacity: 0.9;
-}
-
-.answer.copied::after {
-  content: "Copied!";
-}
+  padding: 
