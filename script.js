@@ -43,12 +43,4 @@ function calculateWhatPercent(input1, input2, answer) {
   const value = parseFloat(input1.value);
   const total = parseFloat(input2.value);
   const result = (value / total) * 100;
-  answer.textContent = isNaN(result) ? "Answer: Invalid input" : `Answer: ${result.toFixed(2)}%`;
-}
-
-function calculatePercentChange(input1, input2, answer) {
-  const from = parseFloat(input1.value);
-  const to = parseFloat(input2.value);
-  const result = ((to - from) / from) * 100;
-  answer.textContent = isNaN(result) ? "Answer: Invalid input" : `Answer: ${result.toFixed(2)}%`;
-}
+  answer.textContent = isNaN(result
