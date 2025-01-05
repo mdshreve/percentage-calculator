@@ -10,59 +10,38 @@
   <header>
     <div class="container">
       <h1>Percentage Calculator</h1>
-      <nav>
-        <ul>
-          <li><a href="#calculations">Calculations</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
-  <main>
-    <section id="calculations" class="container">
-      <h2>Perform Calculations</h2>
-      
-      <div class="calc-block">
-        <label>What is 
-          <input type="number" id="percent-of-percent" placeholder="%">
-          % of 
-          <input type="number" id="percent-of-total" placeholder="value">
-          ?
-        </label>
-        <button id="percent-of-btn">Calculate</button>
-        <p id="percent-of-answer">Answer: --</p>
-      </div>
+  <main class="container">
+    <section>
+      <h2>What is __% of __?</h2>
+      <input id="percent-of-percent" type="number" placeholder="%">
+      <input id="percent-of-total" type="number" placeholder="Value">
+      <button id="percent-of-btn">Calculate</button>
+      <p id="percent-of-answer">Answer: --</p>
+    </section>
 
-      <div class="calc-block">
-        <label>
-          <input type="number" id="is-what-percent-value" placeholder="value">
-          is what % of 
-          <input type="number" id="is-what-percent-total" placeholder="total">
-          ?
-        </label>
-        <button id="is-what-percent-btn">Calculate</button>
-        <p id="is-what-percent-answer">Answer: --</p>
-      </div>
+    <section>
+      <h2>__ is what % of __?</h2>
+      <input id="is-what-percent-value" type="number" placeholder="Value">
+      <input id="is-what-percent-total" type="number" placeholder="Total">
+      <button id="is-what-percent-btn">Calculate</button>
+      <p id="is-what-percent-answer">Answer: --</p>
+    </section>
 
-      <div class="calc-block">
-        <label>What is the % change from 
-          <input type="number" id="percent-change-from" placeholder="from">
-          to 
-          <input type="number" id="percent-change-to" placeholder="to">
-          ?
-        </label>
-        <button id="percent-change-btn">Calculate</button>
-        <p id="percent-change-answer">Answer: --</p>
-      </div>
+    <section>
+      <h2>What is the % change from __ to __?</h2>
+      <input id="percent-change-from" type="number" placeholder="From">
+      <input id="percent-change-to" type="number" placeholder="To">
+      <button id="percent-change-btn">Calculate</button>
+      <p id="percent-change-answer">Answer: --</p>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2025 Percentage Calculator. All rights reserved.</p>
-      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p>© 2025 Percentage Calculator</p>
     </div>
   </footer>
 
