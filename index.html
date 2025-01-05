@@ -15,7 +15,6 @@
 
   <main class="container">
     <section>
-      <h2>What is __% of __?</h2>
       <label>What is 
         <input type="number" id="percent-of-percent" placeholder="%"> % of 
         <input type="number" id="percent-of-total" placeholder="value">?
@@ -25,7 +24,6 @@
     </section>
 
     <section>
-      <h2>__ is what % of __?</h2>
       <label>
         <input type="number" id="is-what-percent-value" placeholder="value"> is what % of 
         <input type="number" id="is-what-percent-total" placeholder="total">?
@@ -35,6 +33,9 @@
     </section>
 
     <section>
-      <h2>What is the % change from __ to __?</h2>
       <label>What is the % change from 
-        <input type="number" id="percent-change-from" placeholder="from"> 
+        <input type="number" id="percent-change-from" placeholder="from"> to 
+        <input type="number" id="percent-change-to" placeholder="to">?
+      </label>
+      <button id="percent-change-btn">Calculate</button>
+      <p id="percent-change-answer" class="answer">An
