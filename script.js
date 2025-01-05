@@ -8,8 +8,9 @@ function setupCalculation(input1Id, input2Id, answerId, calculationFunction) {
   const input1 = document.getElementById(input1Id);
   const input2 = document.getElementById(input2Id);
   const answer = document.getElementById(answerId);
+  const button = document.getElementById(`${answerId.split("-")[0]}-btn`);
 
-  document.getElementById(`${answerId.split("-")[0]}-btn`).addEventListener("click", () => {
+  button.addEventListener("click", () => {
     calculationFunction(input1, input2, answer);
   });
 
@@ -43,4 +44,12 @@ function calculateWhatPercent(input1, input2, answer) {
   const value = parseFloat(input1.value);
   const total = parseFloat(input2.value);
   const result = (value / total) * 100;
-  answer.textContent = isNaN(result
+  answer.textContent = isNaN(result) ? "Answer: Invalid input" : `Answer: ${result.toFixed(2)}%`;
+}
+
+function calculatePercentChange(input1, input2, answer) {
+  const from = parseFloat(input1.value);
+  const to = parseFloat(input2.value);
+  const result = ((to - from) / from) * 100;
+  answer.textContent = isNaN(result) ? "Answer: Invalid input" : `Answer: ${result.toFixed(2)}%`;
+}
