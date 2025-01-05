@@ -15,9 +15,41 @@
 
   <main class="container">
     <section>
-      <label>What is 
+      <p>
+        What is 
         <input type="number" id="percent-of-percent" placeholder="%"> % of 
         <input type="number" id="percent-of-total" placeholder="value">?
-      </label>
-      <button id="percent-of-btn">Calculate</button>
-      <p id="percent-of-answer" class="answer"
+        <button id="percent-of-btn">Calculate</button>
+      </p>
+      <p id="percent-of-answer" class="answer">Answer: --</p>
+    </section>
+
+    <section>
+      <p>
+        <input type="number" id="is-what-percent-value" placeholder="value"> is what % of 
+        <input type="number" id="is-what-percent-total" placeholder="total">?
+        <button id="is-what-percent-btn">Calculate</button>
+      </p>
+      <p id="is-what-percent-answer" class="answer">Answer: --</p>
+    </section>
+
+    <section>
+      <p>
+        What is the % change from 
+        <input type="number" id="percent-change-from" placeholder="from"> to 
+        <input type="number" id="percent-change-to" placeholder="to">?
+        <button id="percent-change-btn">Calculate</button>
+      </p>
+      <p id="percent-change-answer" class="answer">Answer: --</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Percentage Calculator</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
